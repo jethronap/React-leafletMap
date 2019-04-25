@@ -1,0 +1,50 @@
+[
+  {
+    "id": 145,
+    "name": "I.M. Cooling Tower, Belgium",
+    "imageUrl": "https://static.boredpanda.com/blog/wp-content/uuuploads/abandoned-places/abandoned-places-1.jpg",
+    "date": 2007,
+    "lat": 50.802449636933844,
+    "lng": 4.300712943077087
+  },
+  {
+    "id": 148,
+    "name": "The Maunsell Sea Forts, England",
+    "imageUrl": "https://static.boredpanda.com/blog/wp-content/uuuploads/abandoned-places/abandoned-places-4.jpg",
+    "date": 1950,
+    "lat": 51.51276111,
+    "lng": 1.08916667
+  },
+  {
+    "id": 201,
+    "name": "House of the Bulgarian Communist Party, Bulgaria",
+    "imageUrl": "https://static.boredpanda.com/blog/wp-content/uuuploads/abandoned-places/abandoned-places-7.jpg",
+    "date": 1991,
+    "lat": 42.7358,
+    "lng": 25.3938
+  },
+  {
+    "id": 205,
+    "name": "Michigan Central Station in Detroit, U.S.A.",
+    "imageUrl": "https://static.boredpanda.com/blog/wp-content/uuuploads/abandoned-places/abandoned-places-11-1.jpg",
+    "date": 1988,
+    "lat": 42.329845,
+    "lng": -83.07745
+  },
+  {
+    "id": 210,
+    "name": "Salto Hotel, Colombia",
+    "imageUrl": "https://static.boredpanda.com/blog/wp-content/uuuploads/abandoned-places/abandoned-places-19.jpg",
+    "date": 1990,
+    "lat": 4.685965,
+    "lng": -74.054405
+  },
+  {
+    "id": 211,
+    "name": "City Hall Subway Stop in New York, U.S.A.",
+    "imageUrl": "https://static.boredpanda.com/blog/wp-content/uuuploads/abandoned-places/abandoned-places-25.jpg",
+    "date": 1945,
+    "lat": 40.754868,
+    "lng": -73.98573
+  }
+]
