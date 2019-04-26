@@ -5,7 +5,7 @@ import "./place.css";
 class Place extends React.Component {
     render() {
         
-        const title = this.props.place.data + this.props.place.name;
+        const title = this.props.place.date + "-" + this.props.place.name;
         
         // build css properties for react: with `` & js interpolation
         const style = {

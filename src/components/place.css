@@ -4,8 +4,11 @@
 
 .place-picture {
     height: 200px;
+    background-size: cover;
+    background-position: center;
 }
 
 .place-title {
-    
+    margin-top: 10px;
+    font-weight: bold;
 }
