@@ -16,15 +16,19 @@ class App extends React.Component {
       "lng": 1.08916667
     };
 
+    const places = [place, place, place];
+
     return (
 
       <div className="app">
         <div className="main">
           <div className="search">
           </div>
+          {/* use map to iterate through the places array */}
           <div className="places">
-          <Place place={place}/>
-          <Place place={place}/>
+            {places.map(function (place) {
+              return <Place place={place} />
+            })}
           </div>
           <div className="map"></div>
         </div>
