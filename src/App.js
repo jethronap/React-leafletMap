@@ -18,9 +18,16 @@ class App extends React.Component {
 
     return (
 
-      <div>
-        <Place place={place} />
+      <div className="app">
+        <div className="main">
+          <div className="search">
+          </div>
+          <div className="places">
+          </div>
+          <div className="map"></div>
+        </div>
       </div>
+
     );
   }
 }
