@@ -4,13 +4,21 @@ import "./place.css";
 
 class Place extends React.Component {
     render() {
-        const title = DATE + NAME;
         
+        const title = this.props.place.data + this.props.place.name;
+        
+        // build css properties for react: with `` & js interpolation
+        const style = {
+
+            backgroundImage: `url('${ this.props.place.imageUrl }')`
+
+        };
+
         return (
             <div className="place">
-                <div className="place-picture"></div>
+                <div className="place-picture" style={ style }></div>
                 <div className="place-title">
-                    {title}
+                    { title }
                 </div>
             </div>
         );
