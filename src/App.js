@@ -1,7 +1,8 @@
 import React from 'react';
 //import logo from './logo.svg';
 import './App.css';
-import Place from './components/place'
+import Place from './components/place';
+import Map from './components/map';
 
 
 class App extends React.Component {
@@ -9,7 +10,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      places: []
+      places: [],
     };
   }
 
@@ -26,6 +27,7 @@ class App extends React.Component {
       })
   }
 
+
   render() {
 
     return (
@@ -40,7 +42,10 @@ class App extends React.Component {
               return <Place place={place} />
             })}
           </div>
-          <div className="map"></div>
+          <Map className="map" />
+          {/* <div className="map">
+            <Map />
+          </div> */}
         </div>
       </div>
 
