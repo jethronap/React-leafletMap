@@ -26,7 +26,7 @@ class App extends React.Component {
           </div>
           {/* use map to iterate through the places array */}
           <div className="places">
-            {places.map(function (place) {
+            {places.map((place) => {
               return <Place place={place} />
             })}
           </div>
