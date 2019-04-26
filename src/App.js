@@ -23,6 +23,8 @@ class App extends React.Component {
           <div className="search">
           </div>
           <div className="places">
+          <Place place={place}/>
+          <Place place={place}/>
           </div>
           <div className="map"></div>
         </div>

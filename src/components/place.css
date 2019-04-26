@@ -1,5 +1,9 @@
 .place {
-
+    /* compute the basis with 10 px left
+        to rigth respectively */
+    flex-basis: calc(50% - 20px);
+    margin: 10px;
+    
 }
 
 .place-picture {

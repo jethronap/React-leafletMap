@@ -14,3 +14,9 @@
   top: 0;
   position: sticky;
 }
+
+.places {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
