@@ -1,8 +1,8 @@
 import React from 'react';
-//import logo from './logo.svg';
 import './App.css';
 import Place from './components/place';
-import Map from './components/map';
+import { Map as LeafletMap, TileLayer, Marker, Popup } from 'react-leaflet';
+import './components/map.css'
 
 
 class App extends React.Component {
@@ -30,6 +30,8 @@ class App extends React.Component {
 
   render() {
 
+    const center = [39.98, -28.05];
+
     return (
 
       <div className="app">
@@ -37,15 +39,34 @@ class App extends React.Component {
           <div className="search">
           </div>
           {/* use map to iterate through the places array */}
-          <div className="places">
+          <div className="places" >
             {this.state.places.map((place) => {
               return <Place place={place} />
             })}
           </div>
-          <Map className="map" />
-          {/* <div className="map">
-            <Map />
-          </div> */}
+            <LeafletMap className="map"
+              center={center}
+              zoom={2}
+              maxZoom={15}
+              attributionControl={true}
+              zoomControl={true}
+              doubleClickZoom={true}
+              scrollWheelZoom={true}
+              dragging={true}
+              animate={true}
+              easeLinearity={0.35}
+            >
+              <TileLayer
+                url='http://{s}.tile.osm.org/{z}/{x}/{y}.png'
+              />
+              {this.state.places.map((place) => {
+                return <Marker position={[place.lat, place.lng]}>
+                  <Popup>
+                    hello from {place.name}
+                  </Popup>
+                </Marker>
+              })}
+            </LeafletMap>
         </div>
       </div>
 

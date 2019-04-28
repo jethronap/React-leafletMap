@@ -8,12 +8,12 @@
   flex-direction: column;
 }
 
-.map {
+/* .map {
   flex-grow: 1;
   height: 100vh;
   top: 0;
   position: sticky;
-}
+} */
 
 .places {
   display: flex;
