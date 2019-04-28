@@ -40,7 +40,7 @@ class App extends React.Component {
           {/* use map to iterate through the places array */}
           <div className="places" >
             {this.state.places.map((place) => {
-              return <Place place={place} />
+              return <Place key={place.id} place={place} />
             })}
           </div>
             <LeafletMap className="map"
@@ -59,7 +59,7 @@ class App extends React.Component {
                 url='http://{s}.tile.osm.org/{z}/{x}/{y}.png'
               />
               {this.state.places.map((place) => {
-                return <Marker position={[place.lat, place.lng]}>
+                return <Marker key={place.id} position={[place.lat, place.lng]}>
                   <Popup>
                     hello from {place.name}
                   </Popup>
