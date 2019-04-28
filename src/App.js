@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import Place from './components/place';
 import { Map as LeafletMap, TileLayer, Marker, Popup } from 'react-leaflet';
-import './components/map.css'
 
 
 class App extends React.Component {
