@@ -3,6 +3,12 @@ import React from "react";
 import "./place.css";
 
 class Place extends React.Component {
+
+    handleClick = () => {
+        // we call the parent method selectPlace
+        this.props.selectPlace(this.props.place);
+    }
+
     render() {
         
         const title = this.props.place.date + "-" + this.props.place.name;
@@ -15,7 +21,7 @@ class Place extends React.Component {
         };
 
         return (
-            <div className="place">
+            <div className="place" onClick={this.handleClick}>
                 <div className="place-picture" style={ style }></div>
                 <div className="place-title">
                     { title }
