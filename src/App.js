@@ -38,9 +38,11 @@ class App extends React.Component {
   render() {
     // we change the center from constant to variable with let:
     let center = [39.98, -28.05];
+    let zoom = 2;
     // change the center according to state:
     if (this.state.selectedPlace) {
-      center = [this.state.selectedPlace.lat, this.state.selectedPlace.lng]
+      center = [this.state.selectedPlace.lat, this.state.selectedPlace.lng];
+      zoom = 11;
     }
 
     return (
@@ -60,7 +62,7 @@ class App extends React.Component {
           </div>
             <LeafletMap className="map"
               center={center}
-              zoom={2}
+              zoom={zoom}
               maxZoom={15}
               attributionControl={true}
               zoomControl={true}
