@@ -21,19 +21,27 @@ class App extends React.Component {
       .then(response => response.json())
       .then((data) => {
         this.setState({
-          places: data
+          places: data,
+          selectedPlace: null,
         });
       })
   }
 
   selectPlace = (place) => {
+    // here we want to change the state of the map: we gave the key selectedPlace
     console.log(place);
-    
+    this.setState({
+      selectedPlace: place
+    })
   }
 
   render() {
-
-    const center = [39.98, -28.05];
+    // we change the center from constant to variable with let:
+    let center = [39.98, -28.05];
+    // change the center according to state:
+    if (this.state.selectedPlace) {
+      center = [this.state.selectedPlace.lat, this.state.selectedPlace.lng]
+    }
 
     return (
 
