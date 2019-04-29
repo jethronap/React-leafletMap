@@ -79,7 +79,8 @@ class App extends React.Component {
                 selectPlace={this.selectPlace} />
             })}
           </div>
-          <LeafletMap className="map"
+        </div>
+        <LeafletMap className="map"
             center={center}
             zoom={zoom}
             maxZoom={15}
@@ -102,7 +103,6 @@ class App extends React.Component {
               </Marker>
             })}
           </LeafletMap>
-        </div>
       </div>
 
     );

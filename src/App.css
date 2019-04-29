@@ -8,12 +8,12 @@
   flex-direction: column;
 }
 
-/* .map {
+.map {
   flex-grow: 1;
   height: 100vh;
   top: 0;
   position: sticky;
-} */
+}
 
 .search {
   padding: 10px;
@@ -34,9 +34,11 @@
   align-content: flex-start;
 }
 
-.leaflet-container {
+/* .leaflet-container {
+  display: flex;
+  flex-wrap: wrap;
   flex-grow: 1;
   height: 100vh;
   top: 0;
-  position: sticky;
-}
+  position: flex;
+} */
