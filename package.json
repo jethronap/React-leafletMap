@@ -10,7 +10,7 @@
     "react-dom": "^16.13.1",
     "react-leaflet": "^2.7.0",
     "react-scripts": "3.4.3",
-    "yargs-parser": "^19.0.4"
+    "yargs-parser": "^20.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
